@@ -1,8 +1,7 @@
-package ModeloVista;
+package Modelo;
 
 import java.util.ArrayList;
-
-import Modelo.Coordenadas;
+import ModeloVista.Avion;
 
 public class Aeropuerto {
 	private Coordenadas cords;
@@ -46,6 +45,19 @@ public class Aeropuerto {
 	private int getContIds() {
 		contIds+=1;
 		return contIds;
+	}
+	
+	public double getX() {
+		return this.cords.getX();
+	}
+	
+	public double getY() {
+		return this.cords.getY();
+	}
+
+	@Override
+	public String toString() {
+		return "Aeropuerto:"+getNombre()+"\n\tCordenadas:"+getX()+","+getY();
 	}
 	
 	

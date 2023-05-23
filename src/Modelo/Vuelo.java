@@ -1,6 +1,7 @@
-package ModeloVista;
+package Modelo;
 
 import java.time.LocalDateTime;
+import ModeloVista.Avion;
 
 public class Vuelo {
 	private Horario horario;
